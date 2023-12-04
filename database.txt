@@ -1,0 +1,88 @@
+1.What is a Database? Explain with an example why should we need a database.
+Ans. A database is collection of data that is organized, which is also called structured data.
+It can be accessed or stored in a computer system. It can be managed through a Database Management system(DBMS), a software use to manage data.
+EX – A person work in a company there are different departments like the HR department for employee detail, Account department for employee account, organization department in which employee work. These all department store the details of the employee as a data  whenever they need some information from the employee data , so they can easily access it. This is the main use of Database.
+
+
+2.Write a short note on file based storage system. Explain the major challenges of a file based storage system.
+Ans. File based storage system is an effective hierarchical approach used to store data in an organized way on a computer hard drive or on a Network Attached Storage(NAS) device. Initially, the data is stored in files. Next, the files are organized in folders under a hierarchy of directories and subdirectories. To locate a saved file on a computer system, all one requires is a path i.e. from directory to subdirectory and to folder to file.
+Major challenges of file based storage system-
+Data Redundancy: Data redundancy occurs when the same data is stored in multiple files or locations, resulting in inconsistencies and errors.
+Data Inconsistency: Data inconsistency is another major challenge in a file-based storage system. When data is stored in multiple files, it can become difficult to keep all the copies of the data in sync, resulting in inconsistencies.
+Limited Scalability: File-based storage systems are often not very scalable. As the amount of data in the system grows, it can become increasingly difficult to manage and maintain the system.
+Security: File-based storage systems are often less secure than database systems. In a file-based storage system, it can be difficult to control who has access to data and what they can do with it.
+Inefficient use of storage space: File-based systems can lead to inefficient use of storage space as files are duplicated or stored in multiple locations.
+Data Isolation: Data isolation refers to the fact that in a file-based storage system, data is often stored in separate files, which makes it difficult to access and share data across different applications or systems.
+
+
+
+3.What is DBMS? What was the need for DBMS?
+Ans. Database management system is a software which is used to manage the database. For example: MySQL, Oracle, etc are a very popular commercial database which is used in different applications. DBMS provides an interface to perform various operations like database creation, storing data in it, updating data, creating a table in the database and a lot more. It provides protection and security to the database. In the case of multiple users, it also maintains data consistency.
+Need of database-Controls database redundancy: It can control data redundancy because it stores all the data in one single database file and that recorded data is placed in the database.
+Data sharing: In DBMS, the authorized users of an organization can share the data among multiple users.
+Easily Maintenance: It can be easily maintainable due to the centralized nature of the database system.
+Reduce time: It reduces development time and maintenance need.
+Backup: It provides backup and recovery subsystems which create automatic backup of data from hardware and software failures and restores the data if required.
+multiple user interface: It provides different types of user interfaces like graphical user interfaces, application program interfaces
+
+
+4.Explain 5 challenges of file based storage system which was tackled by DBMS.
+Ans. File system in DBMS is the traditional approach of managing databases and there are many limitations of this approach. Following are the major limitations of a file based system:
+Separated and Isolated Data: To take decisions, the user might need to access data from two separate files. For example, if a user wants academic information and the fee of a student, then he needs two different files, i.e. general office and account office. We cannot access all the data from a single file, as it separately stores data for each file.
+Duplication of Data: Often, the same information is stored in multiple files and it costs more time and money. As in the university database, name, class, roll no is the same information of a student that is stored in different files. So, in a file-based system, data duplication is there.
+Data Dependence: If the format of a certain record was changed, then we must update the record in each file containing that format to avoid confusion. Hence, it is difficult to determine relationships between isolated data to meet user requirements.
+Data Inflexibility: Data in-dependency and data isolation limited the flexibility of the file processing system.
+Data Security: In the file-based system the security of data is low because data is maintained in files and is easily accessible. And there are no security mechanisms to protect the files.
+Transaction Problem: The file-based system does not satisfy transaction properties.
+Concurrency Problem: When multiple users access the same piece of data at the same interval of time, then it is called the concurrency of the system. And if they want to update a file simultaneously, then a concurrency problem occurs in a file-based system.
+
+
+5.List out different type of classification in DBMS and explain them in depth.
+Ans. Data model
+A data model is a representation of structured data, usually in the form of a diagram or computer language. It is used to represent and organize data, as well as to facilitate communication between different stakeholders.
+Data models are used to describe the structure, relationships, and constraints of data elements within the system. They can also be used to determine how data should be stored, accessed, and transformed to support the system’s requirements.
+Relational DBMS
+A relational database management system (RDBMS) is a type of database management system (DBMS) that stores data in the form of related tables. The data is organized into rows, columns, and tables, and it is indexed to make it easier to find relevant information.
+RDBMSs are the most commonly used DBMSs, and they are used in a wide variety of applications, from banking systems to retail websites.
+RDBMSs are also used to manage large amounts of data, such as customer information, inventory data, and financial records. The main advantage of an RDBMS is that it allows users to quickly and easily access data from multiple tables.
+Object-oriented DBMS
+Object-oriented DBMS (OODBMS) is a type of database management system that is built around the concept of objects. An object-oriented database stores data in the form of objects, which are pieces of information that contain data as well as associated methods or procedures.
+Objects are not just pieces of data but are also defined by their associated procedures, which allow them to interact with other objects in the database. Object-oriented DBMSs include Oracle, DB2, Informix, and PostgreSQL. Examples of object-oriented DBMS include MongoDB and Apache Cassandra.
+Hierarchical DBMS
+A hierarchical database management system (HDBMS) is a type of database management system (DBMS) based on the hierarchical model, which is a data model that organizes data elements in a tree-like structure.
+The hierarchical model organizes data elements in a tree-like structure, with each element having one parent and multiple children.
+The hierarchical model is used for representing data in a tree-like structure, where each node in the tree has a single parent, and each parent can have multiple children.
+Architecture
+Another way to classify DBMS is by their architecture, which refers to the way that the DBMS is designed and implemented. DBMS can be classified as:
+Client-server: A DBMS that is accessed by users through client applications that communicate with a central server.
+
+
+6.What is significance of Data modelling and explain the types of data modelling.
+Ans. The significance of using data model are:
+Ensures that all data objects required by the database are accurately represented. Omission of data will lead to creation of faulty reports and produce incorrect results.
+A data model helps design the database at the conceptual, physical and logical levels.
+Data Model structure helps to define the relational tables, primary and foreign keys and stored procedures.
+It provides a clear picture of the base data and can be used by database developers to create a physical database.
+It is also helpful to identify missing and redundant data.
+Though the initial creation of data model is time consuming, in the long run, it makes your IT infrastructure upgrade and maintenance cheaper and faster.
+Types of Data Models: There are mainly three different types of data models: conceptual data models, logical data models, and physical data models, and each one has a specific purpose. The data models are used to represent the data and how it is stored in the database and to set the relationship between data items.
+1.Conceptual Data Model: This Data Model defines WHAT the system contains. This model is typically created by Business stakeholders and Data Architects. The purpose is to organize, scope and define business concepts and rules.
+2.Logical Data Model: Defines HOW the system should be implemented regardless of the DBMS. This model is typically created by Data Architects and Business Analysts. The purpose is to developed technical map of rules and data structures.
+3.Physical Data Model: This Data Model describes HOW the system will be implemented using a specific DBMS system. This model is typically created by DBA and developers. The purpose is actual implementation of the database.
+
+
+7.Explain 3 schema architecture along with its advantages.
+Ans. This architecture contains three layers of database management system, which are as follows –
+External/ View level
+This is the highest level of database abstraction. It includes a number of external schemas or user views. This level provides different views of the same database for a specific user or a group of users. An external view provides a powerful and flexible security mechanism by hiding the parts of the database from a particular user.
+Conceptual or Logical level
+This level describes the structure of the whole database. It acts as a middle layer between the physical storage and user view. It explains what data to be stored in the database, what the data types are, and what relationship exists among those data. There is only one conceptual schema per database.
+This level describes the structure of the whole database. It acts as a middle layer between the physical storage and user view. It explains what data to be stored in the database, what the data types are, and what relationship exists among those data. There is only one conceptual schema per database.
+Internal or Physical level
+This is the lowest level of database abstraction. It describes how the data is stored in the database and provides the methods to access data from the database. It allows viewing the physical representation of the database on the computer system.
+The interface between the conceptual and internal schema identifies how an element in the conceptual schema is stored and how it may be accessed. It is one which is closest to physical storage. The internal schema not only defines different stored record types, but also specifies what indices exist, how stored fields are represented.
+Advantages:-
+There are several benefits to using a three-schema architecture in DBMS. Some of these benefits include:
+One of the main advantages of a DBMS's three schemas is its data independence. All three layers are distinct from each other. So we can make changes to one layer without affecting other layers.
+Each schema can scale independently, which can enhance the performance of the database and manage more traffic at the same time.
+ It is simpler to maintain and change each layer individually in a three-schema design due to the separation of the layers.
